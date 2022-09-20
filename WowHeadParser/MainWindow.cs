@@ -48,6 +48,7 @@ namespace WowHeadParser
             comboBoxLocale.Items.Add("it");
             comboBoxLocale.Items.Add("pt");
             comboBoxLocale.Items.Add("ru");
+            comboBoxLocale.Items.Add("cn");
 
             comboBoxChoice.SelectedIndex = 0;
 
@@ -89,7 +90,9 @@ namespace WowHeadParser
                 case "it": Properties.Settings.Default.localIndex = (int)LocaleConstant.itIT; break;
                 case "pt": Properties.Settings.Default.localIndex = (int)LocaleConstant.ptPT; break;
                 case "ru": Properties.Settings.Default.localIndex = (int)LocaleConstant.ruRU; break;
-                default: Properties.Settings.Default.localIndex = (int)LocaleConstant.frFR; break;
+                case "cn": Properties.Settings.Default.localIndex = (int)LocaleConstant.zhCN; break;
+                case "tw": Properties.Settings.Default.localIndex = (int)LocaleConstant.zhTW; break;
+                default: Properties.Settings.Default.localIndex = (int)LocaleConstant.enUS; break;
             }
 
             Properties.Settings.Default.Save();
